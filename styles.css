@@ -14,6 +14,7 @@ body {
   word-wrap: break-word;
   margin: 0;
   -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 .more-space {
@@ -51,6 +52,7 @@ body {
   font-family: font-normal;
   font-weight: normal;
   margin-left: 2px;
+  color: #ffffff;
 }
 
 .main-container {
@@ -151,6 +153,7 @@ body {
   grid-template-rows: auto 1fr;
   grid-row-gap: 16px;
 }
+
 .timeline-item-header {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -162,19 +165,20 @@ body {
 }
 
 .timeline-item-content {
-  margin-top: 8px;
   display: flex;
   grid-auto-columns: auto;
   grid-template-columns: 1fr auto;
   grid-column-gap: 16px;
 }
-.timeline-item-content:not(:last-child) .line {
-  height: 113%;
-  position: absolute;
-  top: 10px;
+.timeline-item-content:last-child .line {
+  height: calc(100% - 24px);
+}
+
+.content-text {
+  padding-bottom: 16px;
 }
 .content-text > :not(:first-child) {
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .content-header .text {
@@ -188,6 +192,7 @@ body {
   margin-top: 6px;
   display: flex;
   width: 16px;
+  min-width: 16px;
   flex-direction: column;
   align-items: center;
   position: relative;
@@ -202,7 +207,9 @@ body {
 
 .line {
   border-left: 2px solid black;
-  height: 100%;
+  height: calc(100% - 2px);
+  position: absolute;
+  top: 10px;
 }
 
 .header-text {
@@ -215,9 +222,6 @@ body {
   .main-container {
     grid-template-columns: unset;
     grid-row-gap: 32px;
-  }
-  .timeline-item-content:not(:last-child) .line {
-    height: 104%;
   }
 }
 

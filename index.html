@@ -15,7 +15,7 @@
             <div class="name">Yurii Ivanov</div>
             <div class="position">Fullstack Software Engineer&#x200b;
                 <i class='icon fas fa-map-marker-alt'>
-                    <span class="location">Kyiv, Ukraine</span>
+                    <a href="https://goo.gl/maps/WE7FnhQMHrFgpUWG9" class="location" target="_blank">Kyiv, Ukraine</a>
                 </i>
             </div>
         </section>
@@ -140,7 +140,9 @@
                         </div>
                         <div class="content-text">
                             <div>Love making people's lives easier using software.</div>
-                            <div>Don't like selling that software.</div>
+                            <div>Automation is life.</div>
+                            <div>Perfectionist sometimes.</div>
+                            <div>Don't like sales.</div>
                         </div>
                     </div>
                 </section>
@@ -156,11 +158,18 @@
                         </div>
                         <div class="content-text">
                             <div class="content-header">
-                                <div class="text">Fullstack Software Engineer at AndersenLab, Kyiv</div>
-                                <div class="timespan">September 2017 - April 2019</div>
+                                <div class="text">Fullstack Software Engineer at Verivox GmbH, Heidelberg</div>
+                                <div class="timespan">May 2019 - Present</div>
                             </div>
-                            <div>Improved database query performance by migrating backend from ORM to plain SQL(TSQL).</div>
-                            <div>Don't like selling that software.</div>
+                            <div>
+                                Created an after-sales user cabinet, brought it to the state of awesome(if compared to the previous state). Thus created a new sales channel which decreased customer acquisition costs by 30%.
+                            </div>
+                            <div>
+                                Implemented a full-blown customer loyalty system(didn't take off though).
+                            </div>
+                            <div>
+                                Developed CI/CD pipelines using Jenkins and GoCD.
+                            </div>
                         </div>
                     </div>
                     <div class="timeline-item-content">
@@ -170,27 +179,59 @@
                         </div>
                         <div class="content-text">
                             <div class="content-header">
-                                <div class="text">Fullstack Software Engineer at Verivox GmbH, Heidelberg</div>
-                                <div class="timespan">May 2019 - Present</div>
+                                <div class="text">Fullstack Software Engineer at AndersenLab, Kyiv</div>
+                                <div class="timespan">September 2017 - April 2019</div>
                             </div>
-                            <div>
-                                Created an after-sales user cabinet, brought it to the state of awesome(if compared to the previous state). Thus created a new sales channel which decreased customer acquisition costs by 30%.
-                            </div>
-                            <div>
-
-                                Implemented a full-blown customer loyalty system(didn't take off though).
-                            </div>
-                            <div>
-                                Developed CI/CD pipelines using Jenkins and GoCD.
-                            </div>
+                            <div>Improved database query performance by migrating backend from ORM to plain SQL(TSQL).</div>
                         </div>
                     </div>
                 </section>
-                <div>bbbb</div>
-                <div>dddd</div>
-                <div>cccc</div>
-                <div>ffff</div>
-                <div>zzzz</div>
+                <section class="timeline-item">
+                    <div class="timeline-item-header">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <div class="header-text">Education</div>
+                    </div>
+                    <div class="timeline-item-content">
+                        <div class="period-line">
+                            <div class="line-circle"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="content-text">
+                            <div class="content-header">
+                                <div class="text">Bachelor, Taras Shevchenko National University of Kyiv, Kyiv</div>
+                                <div class="timespan">September 2014 - June 2017</div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="timeline-item-content">
+                        <div class="period-line">
+                            <div class="line-circle"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="content-text">
+                            <div class="content-header">
+                                <div class="text">Taras Shevchenko National University of Luhansk, Luhansk</div>
+                                <div class="timespan">September 2013 - May 2014</div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="timeline-item-content">
+                        <div class="period-line">
+                            <div class="line-circle"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="content-text">
+                            <div class="content-header">
+                                <div class="text">Luhansk Foreign Languages Luceum, Luhansk</div>
+                                <div class="timespan">September 2009 - May 2013</div>
+                            </div>
+                            <div>Basically the reason I know English.</div>
+                            <!-- <div>Don't like selling that software.</div> -->
+                        </div>
+                    </div>
+                </section>
             </section>
         </section>
     </section>
@@ -218,6 +259,10 @@
         const element = document.querySelector('.page-container');
         element.style.setProperty('background-color', 'initial');
     };
+    const setPageBackground = () => {
+        const element = document.querySelector('.page-container');
+        element.style.setProperty('background-color', '#eeeeee');
+    };
 
     addEventListener('beforeprint', (event) => {
         replaceText('email', emailValue);
@@ -230,7 +275,10 @@
         replaceText('email', emailLabel);
         replaceText('linkedin', linkedinLabel);
         displayItem('print-button');
+        setPageBackground();
     });
+
+
 </script>
 
 </html>
