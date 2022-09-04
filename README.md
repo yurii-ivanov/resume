@@ -1,3 +1,3 @@
 # resume
 
-hosted under
+hosted under https://yurii-ivanov.github.io/resume/
