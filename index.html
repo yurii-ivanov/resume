@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script type="text/javascript" src="http://livejs.com/live.js"></script> -->
+    <script src="https://kit.fontawesome.com/f2dd08fed1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="page-container">
+        <section class="name-container more-space">
+            <div class="name">Yurii Ivanov</div>
+            <div class="position">Fullstack Software Engineer&#x200b;
+                <i class='icon fas fa-map-marker-alt'>
+                    <span class="location">Kyiv, Ukraine</span>
+                </i>
+            </div>
+        </section>
+
+        <section class="main-container">
+            <section class="details-container">
+                <section class="detail-item contact">
+                    <section class="header">
+                        <i class="fa-regular fa-circle"></i>
+                        <span class="text">Contact</span>
+                        <i class="fa-regular fa-circle"></i>
+                    </section>
+                    <section class="content">
+                        <div><a href="mailto:better.hooman@gmail.com" id="email">Email</a></div>
+                        <div><a href="https://www.linkedin.com/in/ivanov-y/" target="_blank" id="linkedin">LinkedIn</a></div>
+                    </section>
+
+                </section>
+                <section class="detail-item skills">
+                    <section class="header">
+                        <i class="fa-regular fa-circle"></i>
+                        <span class="text">Skills</span>
+                        <i class="fa-regular fa-circle"></i>
+                    </section>
+                    <section class="content">
+                        <div class="skill-item">
+                            <div class="skill-name">C#</div>
+                            <div class="skill-progress">
+                                <div class="background-bar"></div>
+                                <div class="filled-in-bar c-sharp"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Typescript</div>
+                            <div class="skill-progress">
+                                <div class="background-bar"></div>
+                                <div class="filled-in-bar typescript"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Node.js</div>
+                            <div class="skill-progress">
+                                <div class="background-bar"></div>
+                                <div class="filled-in-bar node"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">React</div>
+                            <div class="skill-progress">
+                                <div class="background-bar"></div>
+                                <div class="filled-in-bar react"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">SQL</div>
+                            <div class="skill-progress">
+                                <div class="background-bar"></div>
+                                <div class="filled-in-bar sql"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">HTML & CSS</div>
+                            <div class="skill-progress">
+                                <div class="background-bar"></div>
+                                <div class="filled-in-bar html"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                </section>
+                <section class="detail-item hobbies">
+                    <section class="header">
+                        <i class="fa-regular fa-circle"></i>
+                        <span class="text">Hobbies</span>
+                        <i class="fa-regular fa-circle"></i>
+                    </section>
+                    <span class="list">Driving, Eating, Gaming, Sleeping</span>
+                </section>
+                <section class="detail-item skills">
+                    <section class="header">
+                        <i class="fa-regular fa-circle"></i>
+                        <span class="text">Languages</span>
+                        <i class="fa-regular fa-circle"></i>
+                    </section>
+                    <section class="content">
+                        <div class="skill-item">
+                            <div class="skill-name">English</div>
+                            <div class="skill-progress">
+                                <div class="background-bar"></div>
+                                <div class="filled-in-bar en"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Ukrainian</div>
+                            <div class="skill-progress">
+                                <div class="background-bar"></div>
+                                <div class="filled-in-bar uk"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">German</div>
+                            <div class="skill-progress">
+                                <div class="background-bar"></div>
+                                <div class="filled-in-bar de"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                </section>
+                <button class="print-button" id="print-button" onclick="{window.print()}">Print</button>
+            </section>
+            <section class="timeline-container">
+                <section class="timeline-item">
+                    <div class="timeline-item-header">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="header-text">Profile</div>
+                    </div>
+                    <div class="timeline-item-content">
+                        <div class="period-line">
+                            <div class="line-circle"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="content-text">
+                            <div>Love making people's lives easier using software.</div>
+                            <div>Don't like selling that software.</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="timeline-item">
+                    <div class="timeline-item-header">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <div class="header-text">Employment history</div>
+                    </div>
+                    <div class="timeline-item-content">
+                        <div class="period-line">
+                            <div class="line-circle"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="content-text">
+                            <div class="content-header">
+                                <div class="text">Fullstack Software Engineer at AndersenLab, Kyiv</div>
+                                <div class="timespan">September 2017 - April 2019</div>
+                            </div>
+                            <div>Improved database query performance by migrating backend from ORM to plain SQL(TSQL).</div>
+                            <div>Don't like selling that software.</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item-content">
+                        <div class="period-line">
+                            <div class="line-circle"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="content-text">
+                            <div class="content-header">
+                                <div class="text">Fullstack Software Engineer at Verivox GmbH, Heidelberg</div>
+                                <div class="timespan">May 2019 - Present</div>
+                            </div>
+                            <div>
+                                Created an after-sales user cabinet, brought it to the state of awesome(if compared to the previous state). Thus created a new sales channel which decreased customer acquisition costs by 30%.
+                            </div>
+                            <div>
+
+                                Implemented a full-blown customer loyalty system(didn't take off though).
+                            </div>
+                            <div>
+                                Developed CI/CD pipelines using Jenkins and GoCD.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div>bbbb</div>
+                <div>dddd</div>
+                <div>cccc</div>
+                <div>ffff</div>
+                <div>zzzz</div>
+            </section>
+        </section>
+    </section>
+</body>
+
+<script>
+    const emailValue = 'better.hooman@gmail.com';
+    const emailLabel = 'Email';
+    const linkedinValue = 'linkedin.com/in/ivanov-y/';
+    const linkedinLabel = 'LinkedIn';
+
+    const replaceText = (id, text) => {
+        const element = document.getElementById(id);
+        element.innerText = text;
+    };
+    const removeItem = (id) => {
+        const element = document.getElementById(id);
+        element.style.setProperty('display', 'none');
+    };
+    const displayItem = (id) => {
+        const element = document.getElementById(id);
+        element.style.setProperty('display', 'initial');
+    };
+    const removePageBackground = () => {
+        const element = document.querySelector('.page-container');
+        element.style.setProperty('background-color', 'initial');
+    };
+
+    addEventListener('beforeprint', (event) => {
+        replaceText('email', emailValue);
+        replaceText('linkedin', linkedinValue);
+        removeItem('print-button');
+        removePageBackground();
+    });
+
+    addEventListener('afterprint', (event) => {
+        replaceText('email', emailLabel);
+        replaceText('linkedin', linkedinLabel);
+        displayItem('print-button');
+    });
+</script>
+
+</html>
