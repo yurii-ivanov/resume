@@ -116,13 +116,13 @@ body {
   background-color: #2c2c2c;
 }
 .skill-progress .filled-in-bar.c-sharp {
-  width: 100%;
+  width: 90%;
 }
 .skill-progress .filled-in-bar.typescript {
-  width: 80%;
+  width: 70%;
 }
 .skill-progress .filled-in-bar.node {
-  width: 80%;
+  width: 70%;
 }
 .skill-progress .filled-in-bar.react {
   width: 60%;
