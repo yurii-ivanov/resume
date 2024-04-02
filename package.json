@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass:watch": "sass -w styles.scss:styles.css",
-    "start": "concurrently \"npm run sass:watch\" \"live-server\"",
+    "start": "concurrently \"npm run sass:watch\" \"live-server --entry-file=./index-ua.html\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -13,5 +13,8 @@
   "dependencies": {
     "concurrently": "^7.3.0",
     "sass": "^1.54.3"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
   }
 }

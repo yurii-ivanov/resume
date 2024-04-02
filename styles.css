@@ -22,7 +22,7 @@ body {
 }
 
 .page-container {
-  margin: 16px;
+  /* margin: 16px; */
   padding: 16px;
   min-width: 296px;
   max-width: 1024px;
@@ -137,10 +137,10 @@ body {
   width: 100%;
 }
 .skill-progress .filled-in-bar.uk {
-  width: 80%;
+  width: 90%;
 }
 .skill-progress .filled-in-bar.de {
-  width: 60%;
+  width: 40%;
 }
 
 .print-button {
@@ -151,7 +151,7 @@ body {
 .timeline-container {
   display: grid;
   grid-template-rows: auto 1fr;
-  grid-row-gap: 16px;
+  grid-row-gap: 12px;
 }
 
 .timeline-item-header {
